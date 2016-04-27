@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AsyncDisplayKit/ASViewController.h>
+#import <AsyncDisplayKit/ASTableNode.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : ASViewController<ASTableNode *>
 
 
 @end
