@@ -47,7 +47,7 @@
     
     self.imageNode.URL=[self imageURL];
     
-    NSString *title=[NSString stringWithFormat:@"Hello Async %d",_row];
+    NSString *title=[NSString stringWithFormat:@"Hello Async %ld",(long)_row];
     self.nameNode.attributedString = [self getAttributes:title];
 }
 
