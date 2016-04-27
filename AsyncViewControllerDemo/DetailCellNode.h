@@ -13,6 +13,8 @@
 @interface DetailCellNode : ASCellNode
 @property (nonatomic)NSInteger row;
 @property (nonatomic,strong)NSString *imageCategory;
+
+@property (nonatomic,strong)ASTextNode *nameNode;
 /**
  *  异步调用图片的Node
  */

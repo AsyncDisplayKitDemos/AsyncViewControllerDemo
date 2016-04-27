@@ -19,12 +19,14 @@
 @implementation ViewController
 
 -(instancetype)init{
-    self=[super init];
+    self=[super initWithNode:[ASTableNode new]];
     if(self){
     _imageCategories = @[@"abstract", @"animals", @"business", @"cats", @"city", @"food", @"nightlife", @"fashion", @"people", @"nature", @"sports", @"technics", @"transport"];
     }
     return self;
 }
+
+
 
 -(void)dealloc{
     self.tableNode.dataSource=nil;
